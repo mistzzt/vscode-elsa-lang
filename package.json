@@ -1,0 +1,37 @@
+{
+    "name": "elsa-lang",
+    "displayName": "Elsa Syntax",
+    "description": "Adds supports for the Elsa language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "elsa",
+                "aliases": [
+                    "Elsa",
+                    "elsa"
+                ],
+                "extensions": [
+                    ".lc"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "elsa",
+                "scopeName": "source.elsa",
+                "path": "./syntaxes/elsa.tmLanguage.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "js-yaml": "^3.12.1"
+    }
+}
